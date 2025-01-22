@@ -5,14 +5,14 @@ module top_module(
 );
     wire cin;
     wire [15:0] sum1, sum2;
-    add16 a1(
+    add16 A1(
         .a(a[15:0]),
         .b(b[15:0]),
         .cin(0),
         .sum(sum1),
         .cout(cin)
     );
-    add16 a2(
+    add16 A2(
         .a(a[31:16]),
         .b(b[31:16]),
         .sum(sum2),
