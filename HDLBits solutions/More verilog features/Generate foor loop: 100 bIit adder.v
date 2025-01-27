@@ -7,12 +7,12 @@ module top_module(
     genvar i;
     generate  
         for(i=1; i<=99; i=i+1) begin:gen             
-                full_adder (
+                full_adder  A1(
                     .in_a(a[i]),
                     .in_b(b[i]),
                     .c_in(cout[i-1]),
                     .c_out(cout[i]),
-                    .sum(sum[i])
+                    .sum_1(sum[i])
                 );            
         end:gen    
     endgenerate
