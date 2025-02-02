@@ -8,7 +8,7 @@ module top_module(
     wire cout1;
     wire [31:0] b_sub;
     assign b_sub = b ^ {32{sub}};
-    add16 A1(
+    add16 A1(                 // instantiate the adders
         .a(a[15:0]),
         .b(b_sub[15:0]),
         .cout(cout1),
