@@ -4,7 +4,9 @@ module top_module (
     output reg shut_off_computer,
     input      arrived,
     input      gas_tank_empty,
-    output reg keep_driving  ); //
+    output reg keep_driving  );
+    
+    // use two always block
 
     always @(*) begin
         if (cpu_overheated) begin 
