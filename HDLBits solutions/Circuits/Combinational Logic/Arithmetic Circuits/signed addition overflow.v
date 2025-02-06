@@ -6,6 +6,7 @@ module top_module (
 ); //
  
     assign s = a + b;
-    assign overflow = ~a[7] & ~b[7]& s[7] | a[7] & b[7]& ~s[7];
+    // to check for overflow, create a truth table for a[7], b[7] and s[7] and go through when overflow happens.
+    assign overflow = ~a[7] & ~b[7]& s[7] | a[7] & b[7]& ~s[7]; 
 
 endmodule
