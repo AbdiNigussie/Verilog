@@ -4,5 +4,5 @@ module top_module(
     input c,
     input d,
     output out  ); 
-    assign out =  (~a & ~d) | (~b & ~c) | (b & c & d) | (c & d & a);
+    assign out =  (~a & ~d) | (~b & ~c) | (b & c & d) | (c & d & a); // simplify the map 
 endmodule
